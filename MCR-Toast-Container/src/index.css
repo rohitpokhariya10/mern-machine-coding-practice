@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.heading h1 {
+  font-size: 28px;
+}
+
+.toast-container {
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.toast {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 350px;
+}
+
+.toast-type {
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toast-type span {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.close {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toast-btn-container {
+  display: flex;
+  gap: 15px;
+}
+
+.toast-btn-container button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.toast-btn-container button:hover {
+  background-color: #e9e9e9;
+}
+.toast-content{
+  display: flex;
+  flex-direction: column;
+  gap:5px
+}
+.toast-msg{
+  font-size: 14px;
+}
+/* Common styles for every toast */
+.toast-type {
+  width: 350px;
+  padding: 18px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid;
+}
+
+/* Success specific */
+.success {
+  border-color: green;
+  background-color: #e8f5e9;
+}
+
+/* Error specific */
+.error {
+  border-color: red;
+  background-color: #ffebee;
+}
+
+/* Warning specific */
+.warning {
+  border-color: orange;
+  background-color: #fff3e0;
+}
+
+.toast-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.toast-msg {
+  font-size: 14px;
+}
+
+.close {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
