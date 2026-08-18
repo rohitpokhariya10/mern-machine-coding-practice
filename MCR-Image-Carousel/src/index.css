@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* Main Carousel Container */
+.images-crousel-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Images Wrapper */
+.images {
+  text-align: center;
+}
+
+/* Image Container */
+.img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Actual Image */
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Carousel Dots */
+.images span {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Active Dot */
+.current-image {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Inactive Dot */
+.default {
+  opacity: 0.35;
+}
+
+/* Buttons Container */
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* Buttons */
+.btns button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btns button:hover {
+  background-color: #444;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .img {
+    height: 250px;
+  }
+
+  .btns button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
